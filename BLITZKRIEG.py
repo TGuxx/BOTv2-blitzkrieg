@@ -63,7 +63,7 @@ def StartWithdraw():
         # CHECKING PHASE
         withdraw_pos = im.getpixel(WITHDRAW_BTN)
         if withdraw_pos == WITHDRAW_COLOR:
-            p.click(1870,320)
+            p.click(1638,350)
             break
 
         if elapsed_time > seconds:
