@@ -69,7 +69,7 @@ def StartWithdraw():
         # CHECKING PHASE
         withdraw_pos = im.getpixel(WITHDRAW_BTN)
         if withdraw_pos == WITHDRAW_COLOR:
-            p.click(1870,320)
+            p.click(1638,350)
             break
 
         if elapsed_time > seconds:
@@ -122,6 +122,10 @@ def main():
 
         captcha_avoid = sc.getpixel((50,269))
         if captcha_avoid == WHITE_COLOR:
+            p.click(VOID_POS)
+            time.sleep(0.05)
+            p.click(VOID_POS)
+            time.sleep(0.05)
             p.click(VOID_POS)
             
         trade_red = sc.getpixel((110,160))
