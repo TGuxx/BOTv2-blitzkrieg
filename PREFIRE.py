@@ -31,7 +31,6 @@ def main():
         if withdraw_pos == WITHDRAW_COLOR:
             p.click(1638,350)
             SolveCaptcha()
-            break
            
 print("Running PSYCHO-FAST...")
 main()
